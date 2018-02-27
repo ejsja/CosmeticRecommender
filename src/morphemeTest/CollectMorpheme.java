@@ -41,7 +41,7 @@ public class CollectMorpheme
 		
 		try{
 			
-			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306", "root", "apfhdzz20C0!");
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306", "id", "pwd");
 			st = conn.createStatement();			
 			Komoran komoran = new Komoran("D:\\Development\\models-full");
 		

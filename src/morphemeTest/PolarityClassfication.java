@@ -43,7 +43,7 @@ public class PolarityClassfication {
 		HashMap<Double, Integer> hash = new HashMap<Double, Integer>();
 		
 		try{
-			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306", "root", "apfhdzz20C0!");
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306", "id", "pwd");
 			st = conn.createStatement();
 			rs = st.executeQuery("SELECT morpheme, polarityCorrection FROM review_morpheme.m_frequency;");
 			
@@ -119,7 +119,7 @@ public class PolarityClassfication {
 		allReviewCnt = 0;	
 		
 		try{
-			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306", "root", "apfhdzz20C0!");
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306", "id", "pwd");
 			st = conn.createStatement();
 			tempSt = conn.createStatement();
 			rs = st.executeQuery("SELECT morpheme, polarity FROM review_morpheme.m_frequency;");
